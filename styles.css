@@ -1,0 +1,94 @@
+html, body {
+    font-size: 16px;
+    background: rgba(65, 66, 68, 0.964);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+.container {
+    width: 80%;
+    transition: width 1s;
+    max-width: 90rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.product {
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    border: 1px solid #c6c6c6;
+    border-radius: .3rem;
+    box-sizing: border-box;
+    vertical-align: top;
+    background: white;
+    transition: transform .3s;
+    float: left;
+}
+
+.product:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.product .text-center img {
+    max-width: 100%;
+    max-height: 15rem;
+}
+
+.add-to-cart {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    cursor: pointer;
+    padding: .3rem;
+    display: inline-block;
+}
+
+.add-to-cart img {
+    width: 2.5rem;
+} 
+
+.price {
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 640px) {
+    .product {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        width: 80%;
+    }
+    .product {
+        width: 33.3333%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .product {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .product {
+        width: 20%;
+    }
+}
+
+.products::after {
+    display: block;
+    clear: both;
+    content: ' ';
+}
