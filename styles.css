@@ -26,7 +26,6 @@ html, body {
     border: 1px solid #c6c6c6;
     border-radius: .3rem;
     box-sizing: border-box;
-    vertical-align: top;
     background: white;
     transition: transform .3s;
     float: left;
